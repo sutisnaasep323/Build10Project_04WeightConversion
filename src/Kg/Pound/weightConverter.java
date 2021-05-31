@@ -39,16 +39,24 @@ public class weightConverter extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(0, 102, 204));
+
         jLabel1.setFont(new java.awt.Font("Ink Free", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Kilos to Pound Conversion");
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Pound");
 
+        jButton1.setBackground(new java.awt.Color(0, 255, 255));
         jButton1.setFont(new java.awt.Font("Eras Bold ITC", 1, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(102, 102, 102));
         jButton1.setText("Convert To");
 
+        jButton2.setBackground(new java.awt.Color(102, 0, 204));
         jButton2.setFont(new java.awt.Font("Footlight MT Light", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Clear");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,9 +65,12 @@ public class weightConverter extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Kg");
 
+        jButton3.setBackground(new java.awt.Color(204, 51, 0));
         jButton3.setFont(new java.awt.Font("Footlight MT Light", 1, 18)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Exit");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,9 +88,9 @@ public class weightConverter extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                             .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jLabel3)
-                            .addGap(83, 83, 83))
+                            .addGap(89, 89, 89))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
