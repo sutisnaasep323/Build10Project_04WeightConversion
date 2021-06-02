@@ -5,6 +5,8 @@
  */
 package Kg.Pound;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author keyla
@@ -45,6 +47,9 @@ public class weightConverter extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Kilos to Pound Conversion");
 
+        kgTextF.setFont(new java.awt.Font("Ebrima", 1, 24)); // NOI18N
+        kgTextF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Pound");
@@ -53,6 +58,11 @@ public class weightConverter extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Eras Bold ITC", 1, 24)); // NOI18N
         jButton1.setForeground(new java.awt.Color(102, 102, 102));
         jButton1.setText("Convert To");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         clearBtn.setBackground(new java.awt.Color(102, 0, 204));
         clearBtn.setFont(new java.awt.Font("Footlight MT Light", 1, 14)); // NOI18N
@@ -77,6 +87,9 @@ public class weightConverter extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
+
+        poundTextF.setFont(new java.awt.Font("Ebrima", 1, 24)); // NOI18N
+        poundTextF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -159,6 +172,18 @@ public class weightConverter extends javax.swing.JFrame {
         kgTextF.setText("");
         poundTextF.setText("");
     }//GEN-LAST:event_clearBtnActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        double kilo, pound, convert;
+        
+        kilo = Double.parseDouble(kgTextF.getText());
+        
+        convert = (double) (kilo * 2.2046226218);
+        
+        poundTextF.setText(new DecimalFormat("##, ##").format(convert));
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
